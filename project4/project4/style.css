@@ -1,0 +1,282 @@
+body{
+	overflow: hidden;
+	width: 100vw;
+	height: 100vh;
+}
+
+.background{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-image: url("pic.jpeg");
+  background-size: cover;
+  background-position: center;
+}
+
+.wrapper {
+  position: absolute;
+  top: 0; left: 0; bottom: 0; right: 0;
+  margin: auto;
+/*  width: 100vw;
+  height: 100vh;*/
+  background-color: rgba(0, 0, 0, 0.7);
+  width: 1000px;
+  height: 700px;
+}
+
+.title{
+	position: absolute;
+	top: 30px;
+	left: 240px;
+	font-family: 'Righteous', cursive;
+	font-size: 30px;
+	color: rgb(300, 300, 30);
+	letter-spacing: 1px;
+	left: 0;
+	right: 0;
+	margin: 0 auto;
+	text-align: center;
+}
+
+.title1{
+	position: absolute;
+	top: 170px;
+	font-family: 'Righteous', cursive;
+	left: 550px;
+	font-size: 50px;
+	color: rgb(300, 300, 30);
+	letter-spacing: 2px;
+			left: 0;
+		right: 0;
+		margin: 0 auto;
+		text-align: center;
+}
+
+.title2{
+	position: absolute;
+	top: 230px;
+	font-family: 'Righteous', cursive;
+	left: 495px;
+	font-size: 50px;
+	color: rgb(300, 300, 30);
+	letter-spacing: 2px;
+		left: 0;
+		right: 0;
+		margin: 0 auto;
+		text-align: center;
+}
+
+.text{
+	position: absolute;
+	top: 420px;
+	left: 550px;
+	font-size: 30px;
+	color: white;
+	letter-spacing: 0px;
+	font-family: 'Lato', sans-serif;
+		margin: 0 auto;
+		text-align: center;
+}
+
+.text1{
+	position: absolute;
+	top: 455px;
+	left: 542px;
+	font-size: 24px;
+	color: white;
+	letter-spacing: 0px;
+	width: 450px;
+	font-family: 'Lato', sans-serif;
+		margin: 0 auto;
+		text-align: center;
+}
+
+.text2{
+	position: absolute;
+	top: 420px;
+	left: 12px;
+	font-size: 24px;
+	color: white;
+	letter-spacing: 0px;
+	width: 300px;
+	font-family: 'Lato', sans-serif;
+		right: 10;
+		margin: 0 auto;
+		text-align: center;
+}
+
+.text3{
+	position: absolute;
+	top: 510px;
+	left: 30px;
+	font-size: 24px;
+	color: white;
+	letter-spacing: 0px;
+	font-family: 'Lato', sans-serif;
+		margin: 0 auto;
+		text-align: center;
+}
+
+.text4{
+	position: absolute;
+	top: 590px;
+	left: 30px;
+	font-size: 24px;
+	color: white;
+	letter-spacing: 0px;
+	font-family: 'Lato', sans-serif;
+		margin: 0 auto;
+		text-align: center;
+}
+
+.button{
+	position: absolute;
+	top: 510px;
+	left: 550px;
+	width: 260px;
+	height: 50px;
+	background-color: rgb(150, 30, 150);
+	border-radius: 50px;
+	color: white;
+	text-align: center;
+	line-height: 50px;
+	font-family: 'Lato', sans-serif;
+	margin-bottom: 4px;
+	transition: background-color 0.5s ease-in-out;
+}
+
+.button:hover {
+	background-color: rgb(100, 0, 0)
+	color: black;
+	width: 300px;
+	cursor: pointer;
+}
+
+.button1{
+	position: absolute;
+	top: 590px;
+	left: 550px;
+	width: 260px;
+	height: 50px;
+	background-color: rgb(150, 30, 150);
+	border-radius: 50px;
+	color: white;
+	text-align: center;
+	line-height: 50px;
+	font-family: 'Lato', sans-serif;
+	margin-bottom: 4px;
+	transition: background-color 0.5s ease-in-out;
+}
+
+@media (max-width: 375px) {
+	.wrapper{
+		width: 100vw;
+		height: 100vh;
+		overflow: hidden;
+	}
+
+	.title {
+		position: absolute;
+		top: 35px;
+		font-size: 20px;
+		color: rgb(255, 20, 10);
+		left: 0;
+		right: 0;
+		margin: 0 auto;
+		text-align: center;
+	}
+
+	.title1{
+		position: absolute;
+		font-size: 30px;
+		color: rgb(255, 20, 10);
+		left: 0;
+		right: 0;
+		margin: 0 auto;
+		text-align: center;
+		top: 150px;
+		text-transform: uppercase;
+	}
+
+	.title2{
+		position: absolute;
+		top: 190px;
+		font-size: 30px;
+		color: rgb(255, 20, 10);
+		left: 0;
+		right: 0;
+		margin: 0 auto;
+		text-align: center;
+		text-transform: uppercase;
+	}
+
+	.text{
+		position: absolute;
+		top: 290px;
+		font-size: 20px;
+		color: white;
+		left: 0;
+		right: 0;
+		margin: 0 auto;
+		text-align: center;
+	}
+
+	.text1{
+		position: absolute;
+		top: 320px;
+		font-size: 20px;
+		color: white;
+		width: 300px;
+		left: 0;
+		right: 0;
+		margin: 0 auto;
+		text-align: center;
+	}
+
+	.text2{
+		position: absolute;
+		top: 395px;
+		font-size: 20px;
+		color: white;
+		left: 0;
+		right: 0;
+		margin: 0 auto;
+		text-align: center;
+	}
+	.text3{
+		position: absolute;
+		top: 460px;
+		font-size: 20px;
+		color: white;
+		left: 0;
+		right: 0;
+		margin: 0 auto;
+		text-align: center;
+	}
+
+	.text4{
+		position: absolute;
+		top: 500px;
+		font-size: 20px;
+		color: white;
+		left: 0;
+		right: 0;
+		margin: 0 auto;
+		text-align: center;
+	}
+
+	.button{
+	position: absolute;
+	top: 590px;
+	left: 50px;
+	}
+
+	.button1{
+	position: absolute;
+	top: 660px;
+	left: 50px;
+	}
+}
+
