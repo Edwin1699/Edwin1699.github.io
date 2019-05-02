@@ -1,0 +1,344 @@
+.background{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100vw;
+	height: 100vh;
+	background-image: url("background.jpg");
+	background-size: cover;
+	background-position: center;
+}
+
+.title{
+	position: absolute;
+	top: 30px;
+	left: 240px;
+	font-size: 70px;
+	color: rgb(254, 219, 0);
+	font-family: 'Cinzel', serif;
+}
+
+.title1{
+	position: absolute;
+	top: 0px;
+	left: 240px;
+	font-size: 30px;
+	color: rgb(200, 10, 47);
+	font-family: 'Cinzel', serif;
+}
+
+.rectangle{
+	position: absolute;
+	width: 1000px;
+	height: 100px;
+	top: 600px;
+	left: 0px;
+	right: 0px;
+	margin: 0 auto;
+	background-color: rgb(0, 0, 10);
+
+}
+
+.gundamsmall{
+	position: absolute;
+	top: 0px;
+	left: 50px;
+	width: 100px;
+	height: 100px;
+	background-image: url(gundamrx782.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+} 
+
+.gundamzsmall{
+	position: absolute;
+	top: 0px;
+	left: 110px;
+	width: 100px;
+	height: 100px;
+	background-image: url(zetagundam.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+} 
+
+.gundamzzsmall{
+	position: absolute;
+	top: 0px;
+	left: 200px;
+	width: 100px;
+	height: 100px;
+	background-image: url(gundamzz.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+} 
+
+.nugundamsmall{
+	position: absolute;
+	top: 0px;
+	left: 270px;
+	width: 100px;
+	height: 100px;
+	background-image: url(nugundam.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+} 
+
+.gundamf91small{
+	position: absolute;
+	top: 0px;
+	left: 350px;
+	width: 100px;
+	height: 100px;
+	background-image: url(gundamf-91.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+} 
+
+.ggundamsmall{
+	position: absolute;
+	top: 0px;
+	left: 410px;
+	width: 100px;
+	height: 100px;
+	background-image: url(ggundam.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+} 
+
+.gundamwingsmall{
+	position: absolute;
+	top: 0px;
+	left: 490px;
+	width: 100px;
+	height: 100px;
+	background-image: url(wingzerogundam.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+} 
+
+.turnagundamsmall{
+	position: absolute;
+	top: 0px;
+	left: 570px;
+	width: 100px;
+	height: 100px;
+	background-image: url(gundamturna.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+} 
+
+.seeddestinygundamsmall{
+	position: absolute;
+	top: 0px;
+	left: 640px;
+	width: 100px;
+	height: 100px;
+	background-image: url(seeddestinygundam.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+} 
+
+.gundam00small{
+	position: absolute;
+	top: 0px;
+	left: 710px;
+	width: 100px;
+	height: 100px;
+	background-image: url(gundam00.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+} 
+
+.unicorngundamsmall{
+	position: absolute;
+	top: 0px;
+	left: 810px;
+	width: 100px;
+	height: 100px;
+	background-image: url(gundamunicorn.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+} 
+
+.gundambarbatossmall{
+	position: absolute;
+	top: 5px;
+	left: 880px;
+	width: 100px;
+	height: 100px;
+	background-image: url(gundambarbatos.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+} 
+
+.gundam{
+	position: absolute;
+	top: 200px;
+	left: 50px;
+	right: 0px;
+	margin: 0 auto;
+	width: 400px;
+	height: 400px;
+	background-image: url(gundamrx782.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+	display: none;
+} 
+
+.gundamzeta{
+	position: absolute;
+	top: 200px;
+	left: 0px;
+	right: 20px;
+	margin: 0 auto;
+	width: 400px;
+	height: 400px;
+	background-image: url(zetagundam.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+	display: none;
+} 
+
+.gundamzzeta{
+	position: absolute;
+	top: 200px;
+	left: 60px;
+	right: 0px;
+	margin: 0 auto;
+	width: 400px;
+	height: 400px;
+	background-image: url(gundamzz.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+	display: none;
+} 
+
+.nugundam{
+	position: absolute;
+	top: 200px;
+	left: 80px;
+	right: 0px;
+	margin: 0 auto;
+	width: 400px;
+	height: 400px;
+	background-image: url(nugundam.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+	display: none;
+} 
+
+.gundamf91{
+	position: absolute;
+	top: 200px;
+	left: 140px;
+	right: 0px;
+	margin: 0 auto;
+	width: 400px;
+	height: 400px;
+	background-image: url(gundamf-91.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+	display: none;
+} 
+
+.ggundam{
+	position: absolute;
+	top: 200px;
+	left: 100px;
+	right: 0px;
+	margin: 0 auto;
+	width: 400px;
+	height: 400px;
+	background-image: url(ggundam.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+	display: none;
+} 
+
+.gundamwing{
+	position: absolute;
+	top: 200px;
+	left: 50px;
+	right: 0px;
+	margin: 0 auto;
+	width: 400px;
+	height: 400px;
+	background-image: url(wingzerogundam.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+	display: none;
+} 
+
+.turnagundam{
+	position: absolute;
+	top: 200px;
+	left: 90px;
+	right: 0px;
+	margin: 0 auto;
+	width: 400px;
+	height: 400px;
+	background-image: url(gundamturna.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+	display: none;
+} 
+
+.seeddestinygundam{
+	position: absolute;
+	top: 30px;
+	left: 180px;
+	right: 0px;
+	margin: 0 auto;
+	width: 600px;
+	height: 600px;
+	background-image: url(seeddestinygundam.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+	display: none;
+} 
+
+.gundam00{
+	position: absolute;
+	top: 200px;
+	left: 20px;
+	right: 0px;
+	margin: 0 auto;
+	width: 400px;
+	height: 400px;
+	background-image: url(gundam00.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+	display: none;
+} 
+
+.unicorngundam{
+	position: absolute;
+	top: 200px;
+	left: 130px;
+	right: 0px;
+	margin: 0 auto;
+	width: 400px;
+	height: 400px;
+	background-image: url(gundamunicorn.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+	display: none;
+} 
+
+.gundambarbatos{
+	position: absolute;
+	top: 130px;
+	left: 220px;
+	right: 0px;
+	margin: 0 auto;
+	width: 500px;
+	height: 500px;
+	background-image: url(gundambarbatos.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+	display: none;
+}
+
+.show{
+	display: block;
+}
