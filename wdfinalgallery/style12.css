@@ -1,0 +1,50 @@
+.background{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100vw;
+	height: 100vh;
+	background-image: url("background.jpg");
+	background-size: cover;
+	background-position: center;
+}
+
+.text{
+	position: absolute;
+	top: 80px;
+	left: 14px;
+	width: 450px;
+	letter-spacing: 0px;
+	font-size: 55px;
+	color: rgb(200, 10, 47);
+	font-family: 'Cinzel', serif;
+}
+
+.text1{
+	position: absolute;
+	top: 150px;
+	left: 14px;
+	width: 500px;
+	letter-spacing: 0px;
+	font-size: 22px;
+	color: rgb(250, 180, 0);
+	font-family: 'Frank Ruhl Libre', serif;
+}
+
+.unicorngundam{
+	position: absolute;
+	top: 60px;
+	left: 700px;
+}
+
+.unicorngundam1{
+	position: absolute;
+	top: 360px;
+	left: 520px;
+}
+
+.unicorngundam2{
+	position: absolute;
+	top: 360px;
+	left: 960px;
+}
