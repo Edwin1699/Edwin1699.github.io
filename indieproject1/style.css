@@ -1,11 +1,12 @@
 body{
-	color: rgb(200,200,200);
+
+
 }
 
 h1{
 	position: absolute;
 	left: 10px;
-	top: 40px;
+	top: 50px;
 	font-size: 32px;
 	font-family: Helvetica;
 	color: rgb(10, 100, 100);
@@ -14,7 +15,7 @@ h1{
 h2{
 	position: absolute;
 	left: 150px;
-	top: 330px;
+	top: 340px;
 	font-size: 24px;
 	font-family: Helvetica;
 }
@@ -55,13 +56,13 @@ p{
 .vegeta1{
 	position: absolute;
 	top: 140px;
-	width: 360px;
+	width: 380px;
 }
 
 .vegetaclick{
 	position: absolute;
 	top: 1700px;
-	left: 15px;
+	left: 25px;
 	width: 60px;
 	height: 60px;
 }
@@ -69,27 +70,27 @@ p{
 .nagato1{
 	position: absolute;
 	top: 130px;
-	width: 360px;
+	width: 380px;
 }
 
 .nagatoclick{
 	position: absolute;
 	top: 1700px;
-	left: 80px;
-	width: 60px;
+	left: 90px;
+	width: 50px;
 	height: 60px;
 }
 
 .dio1{
 	position: absolute;
 	top: 140px;
-	width: 360px;
+	width: 380px;
 }
 
 .dioclick{
 	position: absolute;
 	top: 1703px;
-	left: 141px;
+	left: 151px;
 	width: 65px;
 	height: 60px;
 }
@@ -97,13 +98,13 @@ p{
 .kira1{
 	position: absolute;
 	top: 110px;
-	width: 360px;
+	width: 380px;
 }
 
 .kiraclick{
 	position: absolute;
 	top: 1703px;
-	left: 208px;
+	left: 218px;
 	width: 65px;
 	height: 60px;
 }
@@ -111,13 +112,13 @@ p{
 .toguro1{
 	position: absolute;
 	top: 130px;
-	width: 360px;
+	width: 380px;
 }
 
 .toguroclick{
 	position: absolute;
 	top: 1700px;
-	left: 275px;
+	left: 285px;
 	width: 60px;
 	height: 60px;
 }
@@ -260,7 +261,7 @@ p{
 .square1{
 	position: absolute;
 	top: 1700px;
-	left: 15px;
+	left:  25px;
 	width: 60px;
 	height: 60px;
 	background-color: rgb(10, 100, 100);
@@ -270,7 +271,7 @@ p{
 .square2{
 	position: absolute;
 	top: 1700px;
-	left: 80px;
+	left: 90px;
 	width: 60px;
 	height: 60px;
 	background-color: rgb(10, 100, 100);
@@ -280,7 +281,7 @@ p{
 .square3{
 	position: absolute;
 	top: 1700px;
-	left: 145px;
+	left: 155px;
 	width: 60px;
 	height: 60px;
 	background-color: rgb(10, 100, 100);
@@ -290,7 +291,7 @@ p{
 .square4{
 	position: absolute;
 	top: 1700px;
-	left: 210px;
+	left: 220px;
 	width: 60px;
 	height: 60px;
 	background-color: rgb(10, 100, 100);
@@ -300,7 +301,7 @@ p{
 .square5{
 	position: absolute;
 	top: 1700px;
-	left: 275px;
+	left: 285px;
 	width: 60px;
 	height: 60px;
 	background-color: rgb(10, 100, 100);
@@ -310,7 +311,7 @@ p{
 .button{
 	position: absolute;
 	top: 1800px;
-	left: 50px;
+	left: 70px;
 	width: 260px;
 	height: 50px;
 	border-radius: 50px;
@@ -325,7 +326,7 @@ p{
 .button2{
 	position: absolute;
 	top: 5px;
-	left: 300px;
+	left: 330px;
 	width: 50px;
 	height: 50px;
 	border-radius: 50px;
