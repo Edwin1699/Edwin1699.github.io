@@ -1,27 +1,387 @@
 body{
-	background-color: rgb(200,200,200);
+
 }
 
 h1{
-	color: rgb(150, 70, 50);
+	position: absolute;
+	left: 10px;
+	top: 40px;
+	font-size: 32px;
+	font-family: Helvetica;
+	color: rgb(10, 100, 100);
+}
+
+h2{
+	position: absolute;
+	left: 150px;
+	top: 330px;
+	font-size: 24px;
+	font-family: Helvetica;
+}
+
+.dioh{
+	position: absolute;
+	left: 160px;
+}
+
+
+.kirah{
+	position: absolute;
+	left: 100px;
+}
+
+.toguroline{
+	position: absolute;
+	top: 400px;
+}
+
+hr{
+	position: absolute;
+	top: 1600px;
+	left: 15px;
+}
+
+p{
+	position: absolute;
+	left: 10px;
+	font-family: proxima-nova, sans-serif;
+	font-style: normal;
+	font-weight: 100;
+	font-size: 16px;
+	letter-spacing: 1px;
+}
+
+.vegeta1{
+	position: absolute;
+	top: 140px;
+	width: 360px;
+}
+
+.vegetaclick{
+	position: absolute;
+	top: 1700px;
+	left: 15px;
+	width: 60px;
+	height: 60px;
+}
+
+.nagato1{
+	position: absolute;
+	top: 130px;
+	width: 360px;
+}
+
+.nagatoclick{
+	position: absolute;
+	top: 1700px;
+	left: 80px;
+	width: 60px;
+	height: 60px;
+}
+
+.dio1{
+	position: absolute;
+	top: 140px;
+	width: 360px;
+}
+
+.dioclick{
+	position: absolute;
+	top: 1703px;
+	left: 141px;
+	width: 65px;
+	height: 60px;
+}
+
+.kira1{
+	position: absolute;
+	top: 110px;
+	width: 360px;
+}
+
+.kiraclick{
+	position: absolute;
+	top: 1703px;
+	left: 208px;
+	width: 65px;
+	height: 60px;
+}
+
+.toguro1{
+	position: absolute;
+	top: 130px;
+	width: 360px;
+}
+
+.toguroclick{
+	position: absolute;
+	top: 1700px;
+	left: 275px;
+	width: 60px;
+	height: 60px;
+}
+
+.titlep{
+	position: absolute;
+	top: 120px;
+}
+
+.titlev{
+	position: absolute;
+	top: 530px;
+	left: 100px;
+	font-size: 50px;
+}
+
+.titlen{
+	position: absolute;
+	top: 830px;
+	left: 100px;
+	font-size: 50px;
+}
+
+.titled{
+	position: absolute;
+	top: 1130px;
+	left: 135px;
+	font-size: 50px;
+}
+
+.titlek{
+	position: absolute;
+	top: 1430px;
+	left: 100px;
+	font-size: 50px;
+}
+
+.titlet{
+	position: absolute;
+	top: 1830px;
+	left: 100px;
+	font-size: 50px;
 }
 
 .p1{
-	color: rgb(50, 20, 180);
-	font-family: Helvetica;
+	position: absolute;
+	top: 380px;
 }
 
 .p2{
-	color: rgb(50, 20, 180);
-	font-family: Helvetica;
+	position: absolute;
+	top: 560px;
 } 
 
+.ol1{
+	position: absolute;
+	top: 680px;
+	left: 10px;
+	font-family: proxima-nova, sans-serif;
+	font-style: normal;
+	font-weight: 100;
+	font-size: 14px;
+	letter-spacing: 1px;
+} 
+
+.p25{
+	position: absolute;
+	top: 930px;
+}
 .p3{
-	color: rgb(50, 20, 180);
-	font-family: Helvetica;
+	position: absolute;
+	top: 1040px;
 }
 
 .p4{
-	color: rgb(50, 20, 180);
-	font-family: Helvetica;
-}  
+	position: absolute;
+	top: 1240px;
+}
+
+.p5{
+	position: absolute;
+	top: 380px;
+}
+
+.p6{
+	position: absolute;
+	top: 660px;
+}
+
+.p7{
+	position: absolute;
+	top: 1000px;
+}
+
+.p8{
+	position: absolute;
+	top: 375px;
+}
+
+.p9{
+	position: absolute;
+	top: 660px;
+}
+
+.p10{
+	position: absolute;
+	top: 1050px;
+}
+
+.p11{
+	position: absolute;
+	top: 370px;
+}
+
+.p12{
+	position: absolute;
+	top: 890px;
+}
+
+.p13{
+	position: absolute;
+	top: 1170px;
+}
+
+.p14{
+	position: absolute;
+	top: 450px;
+}
+
+.p15{
+	position: absolute;
+	top: 910px;
+}
+
+.p16{
+	position: absolute;
+	top: 1190px;
+}
+
+.square1{
+	position: absolute;
+	top: 1700px;
+	left: 15px;
+	width: 60px;
+	height: 60px;
+	background-color: rgb(10, 100, 100);
+	border-radius: 10px 10px 10px 10px;
+}
+
+.square2{
+	position: absolute;
+	top: 1700px;
+	left: 80px;
+	width: 60px;
+	height: 60px;
+	background-color: rgb(10, 100, 100);
+	border-radius: 10px 10px 10px 10px;
+}
+
+.square3{
+	position: absolute;
+	top: 1700px;
+	left: 145px;
+	width: 60px;
+	height: 60px;
+	background-color: rgb(10, 100, 100);
+	border-radius: 10px 10px 10px 10px;
+}
+
+.square4{
+	position: absolute;
+	top: 1700px;
+	left: 210px;
+	width: 60px;
+	height: 60px;
+	background-color: rgb(10, 100, 100);
+	border-radius: 10px 10px 10px 10px;
+}
+
+.square5{
+	position: absolute;
+	top: 1700px;
+	left: 275px;
+	width: 60px;
+	height: 60px;
+	background-color: rgb(10, 100, 100);
+	border-radius: 10px 10px 10px 10px;
+}
+
+.button{
+	position: absolute;
+	top: 1800px;
+	left: 50px;
+	width: 260px;
+	height: 50px;
+	border-radius: 50px;
+	border: 1px solid white;
+	background-color: rgb(10, 100, 100);
+	color: white;
+	text-align: center;
+	line-height: 50px;
+	margin-bottom: 4px;
+}
+
+.button2{
+	position: absolute;
+	top: 5px;
+	left: 300px;
+	width: 50px;
+	height: 50px;
+	border-radius: 50px;
+	border: 1px solid white;
+	background-color: rgb(10, 100, 100);
+	color: white;
+	text-align: center;
+	line-height: 50px;
+	margin-bottom: 4px;
+}
+
+.squarebutton{
+	position: absolute;
+	top: 380px;
+	left: 80px;
+	width: 200px;
+	height: 200px;
+	background-color: rgb(10, 100, 100);
+	border-radius: 10px 10px 10px 10px;
+}
+
+.squarebutton2{
+	position: absolute;
+	top: 680px;
+	left: 80px;
+	width: 200px;
+	height: 200px;
+	background-color: rgb(10, 100, 100);
+	border-radius: 10px 10px 10px 10px;
+}
+
+.squarebutton3{
+	position: absolute;
+	top: 980px;
+	left: 80px;
+	width: 200px;
+	height: 200px;
+	background-color: rgb(10, 100, 100);
+	border-radius: 10px 10px 10px 10px;
+}
+
+.squarebutton4{
+	position: absolute;
+	top: 1280px;
+	left: 80px;
+	width: 200px;
+	height: 200px;
+	background-color: rgb(10, 100, 100);
+	border-radius: 10px 10px 10px 10px;
+}
+
+.squarebutton5{
+	position: absolute;
+	top: 1680px;
+	left: 80px;
+	width: 200px;
+	height: 200px;
+	background-color: rgb(10, 100, 100);
+	border-radius: 10px 10px 10px 10px;
+}
