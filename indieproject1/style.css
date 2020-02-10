@@ -113,6 +113,12 @@ p{
 	width: 380px;
 }
 
+.kiramove{
+	position: absolute;
+	top: 1490px;
+	width: 370px;
+}
+
 .kiraclick{
 	position: absolute;
 	top: 1703px;
@@ -125,6 +131,12 @@ p{
 	position: absolute;
 	top: 130px;
 	width: 380px;
+}
+
+.toguromove{
+	position: absolute;
+	width: 380px;
+	top: 1400px;
 }
 
 .toguroclick{
@@ -242,17 +254,17 @@ p{
 
 .p11{
 	position: absolute;
-	top: 370px;
+	top: 365px;
 }
 
 .p12{
 	position: absolute;
-	top: 890px;
+	top: 865px;
 }
 
 .p13{
 	position: absolute;
-	top: 1170px;
+	top: 1130px;
 }
 
 .p14{
