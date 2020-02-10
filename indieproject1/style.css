@@ -1,6 +1,5 @@
 body{
-
-
+	color: rgb(0,0,0);
 }
 
 h1{
@@ -29,6 +28,7 @@ h2{
 .kirah{
 	position: absolute;
 	left: 100px;
+	top: 330px;
 }
 
 .toguroline{
@@ -59,6 +59,12 @@ p{
 	width: 380px;
 }
 
+.vegetamove{
+	position: absolute;
+	width: 380px;
+	top: 1460px;
+}
+
 .vegetaclick{
 	position: absolute;
 	top: 1700px;
@@ -75,8 +81,8 @@ p{
 
 .nagatoclick{
 	position: absolute;
-	top: 1700px;
-	left: 90px;
+	top: 1699px;
+	left: 95px;
 	width: 50px;
 	height: 60px;
 }
@@ -84,6 +90,12 @@ p{
 .dio1{
 	position: absolute;
 	top: 140px;
+	width: 380px;
+}
+
+.diomove{
+	position: absolute;
+	top: 1475px;
 	width: 380px;
 }
 
@@ -220,12 +232,12 @@ p{
 
 .p9{
 	position: absolute;
-	top: 660px;
+	top: 640px;
 }
 
 .p10{
 	position: absolute;
-	top: 1050px;
+	top: 1010px;
 }
 
 .p11{
