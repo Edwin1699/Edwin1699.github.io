@@ -1,5 +1,5 @@
 body{
-
+	color: rgb(200,200,200);
 }
 
 h1{
@@ -46,6 +46,7 @@ p{
 	left: 10px;
 	font-family: proxima-nova, sans-serif;
 	font-style: normal;
+	font-kerning: 1px;
 	font-weight: 100;
 	font-size: 16px;
 	letter-spacing: 1px;
@@ -334,6 +335,41 @@ p{
 	text-align: center;
 	line-height: 50px;
 	margin-bottom: 4px;
+}
+
+.vegetapic{
+	position: absolute;
+	top: 355px;
+	left: 80px;
+	width: 200px;
+}
+
+.nagatopic{
+	position: absolute;
+	top: 657px;
+	left: 100px;
+	width: 140px;
+}
+
+.diopic{
+	position: absolute;
+	top: 940px;
+	left: 100px;
+	width: 180px;
+}
+
+.kirapic{
+	position: absolute;
+	top: 1270px;
+	left: 90px;
+	width: 200px;
+}
+
+.toguropic{
+	position: absolute;
+	top: 1670px;
+	left: 80px;
+	width: 200px;
 }
 
 .squarebutton{
