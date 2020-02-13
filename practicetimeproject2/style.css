@@ -1,0 +1,64 @@
+body{
+	margin: 0;
+	padding: 0;
+	background-color: black;
+}
+
+.circle{
+  width: 150px;
+  height: 150px;
+  position: absolute;
+  top: 90px;
+  left: 90px;
+  background-color: rgb(90,100,120);
+  border-radius: 50%;
+  animation-name: animA;
+  animation-duration: 1.5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-out;
+}
+
+.circle2{
+  position: absolute;
+  top: 10vw;
+  left: 70vw;
+  width: 20vw;
+  height: 20vw;
+  background-color: blue;
+  animation-name: animationA;
+  animation-duration: .5s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  border-radius: 40%;
+}
+
+@keyframes animA{
+	0% {
+		background-color: rgb(200,200,200);
+		width: 150px;
+		transform: rotate(0deg);
+	}
+	50%{
+		background-color: rgb(200, 150, 200);
+		width: 250px;
+		transform: rotate(200deg);
+	}
+	100%{
+		background-color: rgb(150, 200, 200);
+		width: 400px;
+		transform: rotate(400deg);
+	}
+	150%{
+		background-color: (150,150,150)
+		width: 150px;
+		transform: rotate(0deg);
+	}
+}
+
+@keyframes animationA {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
