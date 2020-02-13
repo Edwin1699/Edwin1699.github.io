@@ -1,0 +1,36 @@
+.circle{
+  width: 150px;
+  height: 150px;
+  position: absolute;
+  top: 220px;
+  left: 440px;
+  background-color: rgb(90,100,120);
+  border-radius: 50%;
+  animation-name: animA;
+  animation-duration: 1.5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-out;
+}
+
+@keyframes animA{
+	0% {
+		background-color: rgb(200,200,200);
+		width: 150px;
+		transform: rotate(0deg);
+	}
+	50%{
+		background-color: rgb(200, 150, 200);
+		width: 250px;
+		transform: rotate(200deg);
+	}
+	100%{
+		background-color: rgb(150, 200, 200);
+		width: 400px;
+		transform: rotate(400deg);
+	}
+	150%{
+		background-color: (150,150,150)
+		width: 150px;
+		transform: rotate(0deg);
+	}
+}
