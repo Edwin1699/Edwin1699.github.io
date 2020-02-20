@@ -1,0 +1,58 @@
+body{
+	margin: 0;
+	padding: 0;
+	background-color: black;
+	background-position: center;
+	background-image: url('galaxy.jpg');
+	background-repeat: no-repeat;
+	background-attachment: fixed
+} 
+
+.moon{
+	position: absolute;
+	width: 1vw;
+	top: 20vw;
+	left: 57vw;
+	background-color: rgb(100, 100, 120);
+    border-radius: 45%;
+    animation-name: animationA;
+    animation-duration: .5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+.sun{
+	position: absolute;
+	width: 20vw;
+	height: 20vw;
+	top: 10vw;
+	left: 67vw;
+	background-color: rgb(255, 92, 0);
+    border-radius: 45%;
+    animation-name: animationA;
+    animation-duration: 1800s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite; 
+ }
+
+.earth{
+	position: absolute;
+	width: 1vw;
+	height: 1vw;
+	top: 20vw;
+	left: 45vw;
+	background-color: rgb(20, 80, 200);
+    animation-name: animationA;
+    animation-duration: 30s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite; 
+}
+
+@keyframes animationA{
+	0% {
+		transform: rotate(0deg);
+	}
+	100% {
+		transform: rotate(360deg);
+	}
+}
