@@ -5,47 +5,181 @@ body{
 	background-position: center;
 	background-image: url('galaxy.jpg');
 	background-repeat: no-repeat;
-	background-attachment: fixed
+	background-attachment: fixed;
 } 
 
 .moon{
 	position: absolute;
-	width: 1vw;
+	width: 0vw;
+	height: 0vw;
 	top: 20vw;
-	left: 57vw;
-	background-color: rgb(100, 100, 120);
+	left: 15vw;
     border-radius: 45%;
     animation-name: animationA;
-    animation-duration: .5s;
+    animation-duration: 1s;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
 }
 
 .sun{
 	position: absolute;
-	width: 20vw;
-	height: 20vw;
 	top: 10vw;
-	left: 67vw;
-	background-color: rgb(255, 92, 0);
+	left: 50vw;
     border-radius: 45%;
+ }
+
+.jupiter{
+	position: absolute;
+	height: .1vw;
+	width: .1vw;
+	top: 10vw;
+	left: 160vw;
     animation-name: animationA;
-    animation-duration: 1800s;
+    animation-duration: 800s;
     animation-timing-function: linear;
     animation-iteration-count: infinite; 
  }
 
 .earth{
 	position: absolute;
-	width: 1vw;
-	height: 1vw;
-	top: 20vw;
-	left: 45vw;
+	width: 0vw;
+	height: 0vw;
+	top: 40vw;
+	left: 25vw;
 	background-color: rgb(20, 80, 200);
     animation-name: animationA;
     animation-duration: 30s;
     animation-timing-function: linear;
     animation-iteration-count: infinite; 
+}
+
+.saturn{
+	position: absolute;
+	top: 60vw;
+	left: 180vw;
+    animation-name: animationA;
+    animation-duration: 800s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite; 
+}
+
+.universe{
+	position: absolute;
+	top: 1000px;
+	font-family: Helvetica;
+	color: white;
+}
+
+.light{
+	position: absolute;
+	top: 900px;
+	left: 150px;
+}
+
+.comet2{
+	position: absolute;
+	top: 900px;
+	left: 2300px;
+}
+
+.meteor1 {
+  position: absolute;
+  top: -500px;
+  left: 30px;
+  transition: all 1s ease-in-out;
+}
+
+.meteor1.alarm {
+  left: 500px;
+  top: 900px;
+}
+
+.meteor2 {
+  position: absolute;
+  top: -500px;
+  left: -300px;
+  transition: all 1s ease-in-out;
+}
+
+.meteor2.alarm {
+  left: 900px;
+  top: 800px;
+}
+
+.meteor3{
+	position: absolute;
+	top: -500px;
+	left: -200px;
+	transition: all 1s ease-in-out;
+}
+
+.meteor3.alarm{
+	left: 2900px;
+	top: 800px;
+}
+
+.meteor4{
+	position: absolute;
+	top: -500px;
+	left: -100px;
+	transition: all 1s ease-in-out;
+}
+
+.meteor4.alarm{
+	left: 2000px;
+	top: 500px;
+}
+
+.meteor5{
+	position: absolute;
+	top: -500px;
+	left: 2500px;
+	transform: rotate(90deg);
+	transition: all 1s ease-in-out;
+}
+
+.meteor5.alarm{
+	top: 800px;
+	left: -200px;
+}
+
+.meteor6{
+	position: absolute;
+	top: -500px;
+	left: 3600px;
+	transform: rotate(90deg);
+	transition: all 1s ease-in-out;
+}
+
+.meteor6.alarm{
+	top: 800px;
+	left: 400px;
+}
+
+.meteor7{
+	position: absolute;
+	top: -700px;
+	left: 1600px;
+	transform: rotate(90deg);
+	transition: all 1s ease-in-out;
+}
+
+.meteor7.alarm{
+	top: 200px;
+	left: -300px;
+}
+
+.message {
+  position: absolute;
+  font-family: Helvetica;
+  font-size: 80px;
+  top: 550px;
+  display: none;
+  color: red;
+}
+
+.message.alarm {
+  display: block;
 }
 
 @keyframes animationA{
