@@ -8,5 +8,5 @@ $(document).ready(function() {
     $(".meteor6").addClass("alarm");
     $(".meteor7").addClass("alarm");
     $(".button").addClass("alarm");
-  }, 3000);
+  }, 10000);
 });

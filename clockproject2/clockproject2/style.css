@@ -91,7 +91,7 @@ body{
 
 .meteor1.alarm {
   left: 500px;
-  top: 900px;
+  top: 1000px;
 }
 
 .meteor2 {
@@ -126,7 +126,7 @@ body{
 }
 
 .meteor4.alarm{
-	left: 2000px;
+	left: 2100px;
 	top: 500px;
 }
 
@@ -152,8 +152,8 @@ body{
 }
 
 .meteor6.alarm{
-	top: 800px;
-	left: 400px;
+	top: 1000px;
+	left: 600px;
 }
 
 .meteor7{
