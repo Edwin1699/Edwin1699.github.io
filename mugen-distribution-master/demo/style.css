@@ -71,11 +71,11 @@ body {
   position: absolute;
   bottom: 80px;
   left: 400px;
-  width: 200px;
-  height: 200px;
+  width: 300px;
+  height: 300px;
   background-image: url("./img/idling-sprite.png");
   animation-name: spriteSheet;
-  animation-duration: 5000ms;
+  animation-duration: 2000ms;
   animation-timing-function: steps(4); /* number of frames in sprite (not counting the final blank space) */
   background-position: 0 center;
   background-size: cover;
@@ -99,15 +99,15 @@ body {
 .hero.jumping {
   background-image: url("./img/jumping-sprite.png");
   animation-name: spriteSheet;
-  animation-duration: 1000ms;
+  animation-duration: 950ms;
   animation-timing-function: steps(4); /* number of frames in sprite (not counting the final blank space) */
 }
 
 .hero.attacking {
-  background-image: url("./img/attacking-sprite.png");
+  background-image: url("./img/action-sprite.png");
   animation-name: spriteSheet;
   animation-duration: 600ms;  /* set to same number in initialize() as well or it will look weird */
-  animation-timing-function: steps(4); /* number of frames in sprite (not counting the final blank space) */
+  animation-timing-function: steps(9); /* number of frames in sprite (not counting the final blank space) */
 }
 
 .monster {
