@@ -6,15 +6,15 @@ View a live demo (with rather rough placeholder graphics) at <a href="https://ma
 MUGEN displays three types of visual elements:
 * background
 * hero character
-* monster character
+* non-player character (NPC)
 
 It responds to user clicks/taps to support the following actions by the hero:
 * display an "idle" state waiting for an action
 * walking
 * jumping
-* attacking
+* special action
 
-MUGEN controls the location of the hero directly within the JavaScript engine, but the rest of the hero's visual styling, along with that of the monster, can be set with a typical CSS file. The engine simply adds or removes the corresponding class from each element according to user actions. Thus, coders with even basic CSS knowledge can take advantage of its full range of features, such as transitions, keyframes, and sprite-based animations, to quickly bring their visual designs to life.
+MUGEN controls the location of the hero directly within the JavaScript engine, but the rest of the hero's visual styling, along with that of the NPC, can be set with a typical CSS file. The engine simply adds or removes the corresponding class from each element according to user actions. Thus, coders with even basic CSS knowledge can take advantage of its full range of features, such as transitions, keyframes, and sprite-based animations, to quickly bring their visual designs to life.
 
 Some additional enhancements can be enabled through initialization settings (see below), such as responsive resizing for a variety of screens, and an autoplay mode.
 
@@ -34,14 +34,14 @@ MUGEN can be applied to projects covering a range of timeframes, from one-day wo
     * `.hero` appearance of the hero in an idle, or neutral, state
     * `.hero.walking` appearance of the hero when walking
     * `.hero.jumping` appearance of the hero when jumping
-    * `.hero.attacking` appearance of the hero when performing an attack
-    * `.hero.left` appearance of the hero when facing left, with right being considered the default (note: this class may be applied in the walking, jumping, or attacking states)
-    * `.monster` appearance and motion of the monster
-    * `.monster.was-hit` appearance and motion of the monster after being hit by hero
+    * `.hero.doing-action` appearance of the hero when performing an action
+    * `.hero.left` appearance of the hero when facing left, with right being considered the default (note: this class may be applied in the walking, jumping, or action states)
+    * `.npc` appearance and motion of the NPC
+    * `.npc.was-interacted` appearance and motion of the NPC after receiving the special action of hero
     * `.instructions` appearance of a short instruction text blurb that displays when the page first loads
     * `.score` appearance of score indicator
   * `script.js` a short JavaScript file that instantiates and initializes the MUGEN library
-  * `img/` a directory containing all the images and sprite sheets required for the background, hero, and monster
+  * `img/` a directory containing all the images and sprite sheets required for the background, hero, and NPC
 ## Getting started
 The easiest way to get started with the library is to start tweaking the image assets and code in the demo files. 
 
@@ -56,53 +56,55 @@ Alternatively, to add MUGEN to a new project starting from scratch, follow these
 * That's it! MUGEN will respond to user clicks/taps, move the characters, and apply CSS classes according to the default settings—or the custom values you set during initialization (see *Initialization settings* for more)
 
 ## Initialization settings
-MUGEN's operation can be customized with certain settings, passed as an object in the initialization function, as in the following example where the length of the hero's attack duration is set to 600ms:
+MUGEN's operation can be customized with certain settings, passed as an object in the initialization function, as in the following example where the length of the hero's special action duration is set to 600ms:
 ```
   var mugen = new MUGEN();
-  mugen.initialize({attackDuration: 600});
+  mugen.initialize({actionDuration: 600});
 ```
 The following example shows how more than one setting can be passed into the initialization function:
 ```
   var mugen = new MUGEN();
-  mugen.initialize({ attackDuration: 600, jumpHeight: 220, monsterSpeed: 550 });
+  mugen.initialize({ actionDuration: 600, jumpHeight: 220, npcSpeed: 550, makeResponsive:true });
 ```
 The following is a complete list of available settings:
 * `titleScreenImageURL` (string in quotes) url for an image to be used as title screen (optional)
 * `heroSpeed` (number) how fast the hero moves when walking, in pixels per second
 * `jumpHeight` (number) how high the hero jumps, in pixels
-* `attackDuration` (number) duration of the hero's attack animation, in milliseconds **note: this should match the setting in the CSS file**)
-* `attackRadius` (number) how far out the hero's attack reaches to hit a monster, in pixels (from center of hero div)
-* `monsterHitRadius` (number) how far out from the center of the monster div its body extends and can be hit, in pixels
-* `monsterSpeed` (number) how fast the monster moves, in pixels per second
-* `timeBetweenMonsters` (number) length of time between new monster spawns, in milliseconds
-* `monsterMoveToX` (number) how far across the screen the monster will attempt to move, in pixels (default is all the way across)
-* `maxSimultaneousMonsters` (number) maximum number of monsters that will appear at once (default is 10)
-* `pointsPerMonsterKilled` (number) how many points are added to the score for each monster killed
+* `actionDuration` (number) duration of the hero's special action animation, in milliseconds **note: this should match the setting in the CSS file**)
+* `actionRadius` (number) how far out the hero's special action reaches to "hit" an NPC, in pixels (from center of hero div)
+* `npcCollisionRadius` (number) how far out from the center of the NPC div its body extends and can be "hit," in pixels
+* `npcSpeed` (number) how fast the NPC moves, in pixels per second
+* `timeBetweenNPCs` (number) length of time between new NPC spawns, in milliseconds
+* `npcMoveToX` (number) how far across the screen the NPC will attempt to move, in pixels (default is all the way across)
+* `maxSimultaneousNPCs` (number) maximum number of NPCs that will appear at once (default is 10)
+* `pointsPerNPCInteracted` (number) how many points are added to the score for each NPC gets touched by the special action
+* `removeNPCAfterInteracted` (boolean) when true, NPC gets removed after being touched by the special action (default is true)
+* `removeNPCAfterInteractedDelay` (number) how long after being "hit" to wait before removing NPC, in milliseconds (default is 500ms)
 * `makeResponsive` (boolean) when set to true, MUGEN will attempt to resize the page to fit on smaller screens **note: this feature is experimental and potentially buggy**
-* `autoPlay` (boolean) when set to true, MUGEN will make the hero move, jump, and attack automatically instead of waiting for user input
+* `autoPlay` (boolean) when set to true, MUGEN will make the hero move, jump, and do the special action automatically instead of waiting for user input
 
 Optionally, you can also code your own callback functions that will be triggered by certain game events. Anything you can code in JavaScript could be programmed into these callbacks, such as playing a sound, showing or hiding an HTML element of your own making, changing the CSS style/class on HTML elements, etc. 
 
 Callback functions can be passed in like the other settings, as in this heavily simplified example:
 ```
-  mugen.initialize({ onMonsterSpawn: function() {console.log("monster spawned!";} });
+  mugen.initialize({ onNPCSpawn: function() {console.log("NPC spawned!";} });
 ```
 More complex callbacks can be created first, then passed in as variables like so:
 ```
   var myCallback = function() {
-   console.log("monster spawned!");
+   console.log("NPC spawned!");
    audio.play();
-   document.querySelector(".background").classList.add("monster-time");
+   document.querySelector(".background").classList.add("npc-new-spawn");
    // etc.
   };
-  mugen.initialize({ onMonsterSpawn: myCallback } });
+  mugen.initialize({ onNPCSpawn: myCallback } });
 ```
 Available callback field names and the events that trigger them follow:
 * `onGameStart` (function) start of game
-* `onMonsterSpawn` (function) each time a new monster appears
-* `onMonsterWasHit` (function) each time a monster gets hit by the hero's attack
+* `onNPCSpawn` (function) each time a new NPC appears
+* `onNPCWasInteracted` (function) each time an NPC gets "hit" by the hero's action
 * `onHeroWalk` (function) each time the hero starts to walk
-* `onHeroAttack` (function) each the hero starts to attack
+* `onHeroAction` (function) each time the hero starts the special action
 * `onHeroJump` (function) each time the hero starts to jump
 
 ## Formatting animation sprites
@@ -112,7 +114,7 @@ These guidelines will help get the best results while avoiding technical headach
 * frames should be arranged from left to right on each sprite sheet
 * each frame should be a square
 * each sprite sheet should end with one blank full frame
-    * necessary due to an interaction between the way CSS handles percentages in background-position and the desire to keep the hero and monster as readily resizable/responsive as possible by using percentages
+    * necessary due to an interaction between the way CSS handles percentages in background-position and the desire to keep the hero and NPC as readily resizable/responsive as possible by using percentages
 * example: a sprite sheet with 4 keyframes might be exported as a single png image, where each frame is 200x200px, for a total of 1000px wide and 200px tall (4 keyframes plus 1 blank totally 5 frames at 200px wide each)
 * remember to set the `steps()` number of the animation-timing-function in the CSS to the number of keyframes in your animation
   * e.g. if a sprite sheet has 4 frames (not counting the required blank frame at the end), use `animation-timing-function: steps(4);`

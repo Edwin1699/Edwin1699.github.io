@@ -103,19 +103,19 @@ body {
   animation-timing-function: steps(4); /* number of frames in sprite (not counting the final blank space) */
 }
 
-.hero.attacking {
+.hero.doing-action {
   background-image: url("./img/action-sprite.png");
   animation-name: spriteSheet;
-  animation-duration: 700ms;  /* set to same number in initialize() as well or it will look weird */
+  animation-duration: 600ms;  /* set to same number in initialize() as well or it will look weird */
   animation-timing-function: steps(9); /* number of frames in sprite (not counting the final blank space) */
 }
 
-.monster {
+.npc {
   position: absolute;
-  width: 150px;
-  height: 150px;
+  width: 170px;
+  height: 170px;
   bottom: 290px;
-  background-image: url("./img/monster-sprite.png");
+  background-image: url("./img/npc-sprite.png");
   background-size: cover;
   animation-name: spriteSheet;
   animation-duration: 500ms;
@@ -124,27 +124,22 @@ body {
   pointer-events: none;
 }
 
-.monster.was-hit {
-  opacity: 0;
+.npc.was-interacted {
   transition: opacity 400ms linear;
+  background-image: url("./img/npc-sprite-animation.png");
+  animation-duration: 500ms;
+  animation-timing-function: steps(7);
+  animation-iteration-count: infinite;
+  pointer-events: none;
 }
 
 .preload-image {
   position: absolute;
-  top: 0; left: 0; right: 0; bottom: 0;
-  margin: auto;
-  width: 1024px;
-  height: 748px;
-  background-image: url("./img/title-screen.png");
-  background-size: cover;
-  background-size: contain;
-  background-repeat: no-repeat;
+  left: -99999px;
+  top: -99999px;
+  opacity: 0;
   pointer-events: none;
-  /*animation-name: spriteSheet;
-  animation-duration: 1000ms;
-  animation-timing-function: steps(5); /* number of frames in sprite (not counting the final blank space) */
-  /*animation-iteration-count: infinite;  
-  pointer-events: none;*/
+
 }
 
 @keyframes spriteSheet {
