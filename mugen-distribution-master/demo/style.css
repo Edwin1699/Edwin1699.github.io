@@ -140,10 +140,11 @@ body {
   background-size: contain;
   background-repeat: no-repeat;
   pointer-events: none;
-  animation-name: spriteSheet;
+  /*animation-name: spriteSheet;
   animation-duration: 1000ms;
   animation-timing-function: steps(5); /* number of frames in sprite (not counting the final blank space) */
-  animation-iteration-count: infinite;  
+  /*animation-iteration-count: infinite;  
+  pointer-events: none;*/
 }
 
 @keyframes spriteSheet {
